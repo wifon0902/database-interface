@@ -1,0 +1,115 @@
+body
+{
+    margin: 0 auto;
+    background-image: url("../img/background.jpeg");
+}
+
+.zakladki
+{
+    background-color: rgba(10, 10, 10, 0.5);
+    backdrop-filter: blur(10px);
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-left: 1400px;
+    animation-name: przyplyw;
+    animation-duration: 0.8s;
+    -webkit-animation-name: przyplyw;
+    -webkit-animation-duration: 0.8s;
+}
+
+@keyframes przyplyw {
+    0% { opacity: 0; margin-left: 1500px;}
+    100% { opacity: 1; margin-left: 1400px;}
+}
+
+@-webkit-keyframes przyplyw {
+    0% { opacity: 0; margin-left: 1500px;}
+    100% { opacity: 1; margin-left: 1400px;}
+}
+
+.przyciski
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    background-color: transparent;
+    color: #d0cde7;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 35px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.przyciski:hover
+{
+    color: rgba(208, 205, 231, 0.5);
+}
+
+.container
+{
+    background-color: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(10px);
+    width: 25%;
+    height: 210px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: 150px;
+    margin-left: 37%;
+    padding-top: 10px;
+    text-align: center;
+    animation-name: przyplyw2;
+    animation-duration: 0.8s;
+    -webkit-animation-name: przyplyw2;
+    -webkit-animation-duration: 0.8s;
+}
+
+@keyframes przyplyw2 {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@-webkit-keyframes przyplyw2 {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+.label
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center; 
+    color: #d0cde7;
+    font-size: 30px;
+    line-height: 90px;
+}
+
+.input
+{
+    background: #04020f;
+    width: 80%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    color: #d0cde7;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.input:hover
+{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer
+{
+    color: rgba(208, 205, 231, 0.2);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
